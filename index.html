@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS linkes-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Bootstrap v5 forms</title>
+  </head>
+  <body>
+
+    <div class="container tuhin">
+      <form>
+        <div class="mb-3 tuhin2">
+          <label for="email_address" class="form-label">Email Address</label>
+          <input type="email" id="email_address" class="form-control email_address tuhin2" name="email_address" placeholder="enter your email address" required>
+        </div>
+        <div class="mb-3 tuhin2">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" id="password" class="form-control password tuhin2" name="password" placeholder="enter your password" required>
+        </div>
+        <div class="mb-3 form-check tuhin2">
+          <input type="checkbox" id="check1" class="form-check-input check1 tuhin2" name="check1">
+          <label for="check1" class="form-check-label tuhin2">check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary tuhin2">submit</button>
+
+
+        <div class="mb-3 tuhin2">
+          <label for="password1" class="form-label tuhin2">Password</label>
+          <input type="password" id="password1" name="password1" class="form-control tuhin2" aria-describedby>
+          <div id="passwordHelpBlock" class="form-text tuhin2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum impedit eos vero ipsam ipsa nulla officiis praesentium necessitatibus</div>
+        </div>
+        <fieldset disabled>
+          <div class="mb-3 tuhin2">
+          <label for="email_address1" class="form-label tuhin2">Email Address</label>
+          <input type="email" id="email_address1" class="form-control email_address1 tuhin2" name="email_address1" placeholder="enter your email address" required>
+        </div>
+        </fieldset>
+
+        <div class="mb-3 tuhin2">
+          <label for="email_address2" class="form-label tuhin2">Email Address</label>
+          <input type="email" id="email_address2" class="form-control email_address2 tuhin2" name="email_address2" placeholder="enter your email address" required>
+        </div>
+        <div class="mb-3 tuhin2">
+          <label for="Textarea1" class="form-label tuhin2">Example textarea</label>
+          <textarea name="Textarea1" id="Textarea1" class="form-control tuhin2" cols="" rows="5"></textarea>
+        </div>
+        <div class="mb-3 tuhin2">
+          <label for="email_address2" class="form-label tuhin2">Email Address</label>
+          <input type="text" id="email_address2" class="form-control form-control-sm tuhin2" name="email_address2" placeholder="enter your email address" aria-label="form-control-sm example">
+        </div>
+
+        <div class="mb-3 row tuhin2">
+          <label for="email4" class="col-sm-2 col-form-label tuhin2">Email</label>
+          <div class="col-sm-10">
+            <input type="text" readonly class="form-control-plaintext tuhin2" id="email4" value="stctuhin@gmail.com">
+          </div>
+        </div>
+        <div class="mb-3 row tuhin2">
+          <label for="password" class="col-sm-2 col-form-label tuhin2">Password</label>
+          <div class="col-sm-10">
+            <input type="password" id="password" class="form-control form-control-sm tuhin2" name="password" placeholder="enter your email address" required>
+          </div>
+        </div>
+        <div class="mb-3 tuhin2">
+          <label for="file" class="form-label tuhin2">Default file input example</label>
+          <input type="file" id="file" class="form-control tuhin2" name="file">
+        </div>
+        <div class="mb-3 tuhin2">
+          <label for="data_list" class="form-label tuhin2">Datalist example</label>
+          <input type="data_list" list="datalistOptions" id="data_listdata_list" class="form-control tuhin2" name="data_list" placeholder="type to search">
+          <datalist id="datalistOptions">
+              <option value="samiul">
+              <option value="hasan">
+              <option value="tuhin">
+              <option value="robul">
+              <option value="shovo">
+          </datalist>
+        </div>
+         <div class="mb-3 tuhin2">
+           <select class="form-select tuhin2" aria-label="default select example">
+            <option selected>open this select menu</option>
+            <option value="1">samiul</option>
+            <option value="2">hasan</option>
+            <option value="3">tuhin</option>
+            <option value="4">default</option>
+           </select>
+         </div>
+         <div class="mb-3 ">
+           <select class="form-select form-select-sm " aria-label="form-select-sm example">
+            <option selected>open this select menu</option>
+            <option value="1">samiul</option>
+            <option value="2">hasan</option>
+            <option value="3">tuhin</option>
+            <option value="4">default</option>
+           </select>
+         </div>
+         <div class="mb-3 tuhin2">
+           <select class="form-select tuhin2" multiple aria-label="multiple select example">
+            <option selected>open this select menu</option>
+            <option value="1">samiul</option>
+            <option value="2">hasan</option>
+            <option value="3">tuhin</option>
+            <option value="4">default</option>
+           </select>
+         </div>
+        <div class="form-check tuhin2">
+          <input type="checkbox" id="check1" class="form-check-input check1 tuhin2" name="check1">
+          <label for="check1" class="form-check-label tuhin2">Checked checkbox</label>
+        </div>
+
+        <div class="form-check tuhin2">
+          <input type="radio" id="radio" class="form-check-input radio tuhin2" name="radio">
+          <label for="radio" class="form-check-label tuhin2">Checked redio</label>
+        </div>
+        <div class="form-check form-switch tuhin2">
+          <input type="checkbox" id="check1" class="form-check-input check1 tuhin2" name="check1">
+          <label for="check1" class="form-check-label tuhin2">Default switch checkbox input</label>
+        </div>
+         <div class="form-check form-switch tuhin2">
+          <input type="checkbox" id="check1" class="form-check-input check1 tuhin2" name="check1" checked>
+          <label for="check1" class="form-check-label tuhin2">Default switch checkbox input</label>
+        </div>
+        <div class="form-check form-check-inline tuhin2">
+          <input type="checkbox" id="check1" class="form-check-input check1 tuhin2" name="check1" value="option1">
+          <label for="check1" class="form-check-label tuhin2">1</label>
+        </div>
+        <div class="form-check form-check-inline tuhin2">
+          <input type="checkbox" id="check1" class="form-check-input check1 tuhin2" name="check1" value="option2">
+          <label for="check1" class="form-check-label tuhin2">2</label>
+        </div>
+        <div class="form-check form-check-inline tuhin2">
+          <input type="checkbox" id="check1" class="form-check-input check1 tuhin2" name="check1" value="option3" edisabled>
+          <label for="check1" class="form-check-label tuhin2">3</label>
+        </div>
+        <div class="tuhin2">
+          <input type="checkbox" id="button1" class="btn-check button1 tuhin2" name="button1" autocomplete="off">
+          <label for="button1 " class="btn btn-outline-primary tuhin2">single toggle</label>
+        </div>
+         <div class="tuhin2">
+          <input type="checkbox" id="button1" class="btn-check button1 tuhin2" name="button1" checked autocomplete="off">
+          <label for="button1 " class="btn btn-outline-secondary tuhin2">checked</label>
+        </div>
+        <div class="tuhin2">
+          <input type="radio" class="btn-check tuhin2" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+          <label class="btn btn-outline-success tuhin2" for="success-outlined">Checked success radio</label>
+        </div>
+        <div class="tuhin2">
+          <input type="radio" class="btn-check tuhin2" name="options-outlined" id="danger-outlined" autocomplete="off">
+          <label class="btn btn-outline-danger tuhin2" for="danger-outlined">Danger radio</label>
+        </div>
+        <div class="tuhin2">
+          <label class="form-label tuhin2" for="custom1">Example range</label>
+          <input type="range" class="form-range tuhin2" name="tuhin2" id="custom1">
+        </div>
+        <div class="tuhin2">
+          <label class="form-label tuhin2" for="custom1">Example range</label>
+          <input type="range" class="form-range tuhin2" name="tuhin2" min="0" max="5" step="0.5" id="custom1">
+        </div>
+        <div class="input-group tuhin2 mb-3">
+          <span class="input-group-text" id="basic-addon1">@</span>
+          <input type="text" class="form-control tuhin2" name="tuhin" placeholder="username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group tuhin2 mb-3">
+          <input type="text" class="form-control tuhin2" name="tuhin" placeholder="Recipient's  username" aria-label="Recipient's  Username" aria-describedby="basic-addon2">
+          <span class="input-group-text" id="basic-addon2">@</span>
+        </div>
+         <div class="input-group tuhin2 mb-3">
+          <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+          <input type="text" class="form-control tuhin2" id="basic-url" name="tuhin"  aria-describedby="basic-addon3">
+        </div>
+         <div class="input-group tuhin2 mb-3">
+          <span class="input-group-text" id="basic-addon3">$</span>
+          <input type="text" class="form-control tuhin2" id="basic-url" name="tuhin"  aria-label="Amount (to the nearest dollar)">
+          <span class="input-group-text" id="basic-addon3">000000</span>
+        </div>
+        <div class="input-group tuhin2 mb-3">
+          <input type="text" class="form-control tuhin2" name="tuhin" placeholder="Username" aria-label="Username">
+          <span class="input-group-text" id="basic-addon2">@</span>
+          <input type="text" class="form-control tuhin2" name="tuhin" placeholder="Server" aria-label="Server">
+        </div>
+        <div class="input-group tuhin2">
+         <span class="input-group-text tuhin2">With textarea</span>
+         <textarea class="form-control tuhin2" aria-label="With textarea"></textarea>
+        </div>
+        <div class="input-group tuhin2">
+          <span class="input-group-text tuhin2">first and last name</span>
+          <input type="text" aria-label="first name" class="form-control">
+          <input type="text" aria-label="last name" class="form-control">
+        </div>
+        <div class="input-group tuhin2 mb-3">
+          <input type="text" class="form-control tuhin2" name="tuhin" placeholder="Recipient's Username" aria-label="Recipient's username with two button addons">
+          <button class="btn btn-outline-primary tuhin2" type="button">Button</button>
+          <button class="btn btn-outline-secondary tuhin2" type="button">Button</button>
+        </div>
+        <div class="input-group mb-3">
+          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Dropdown</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-item"></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+          <input type="text" class="form-control" aria-label="text input with dropdown button">
+        </div>
+        <div class="input-group mb-3">
+          <input type="file" class="form-control tuhin2" id="fill1" aria-describedby="fill1" aria-label="upload">
+          <button class="btn btn-outline-secondary tuhin2" type="button" id="fill1">Button</button>
+        </div>
+        <div class="form-floating mb-3 tuhin2">
+          <input type="email" id="email_address" class="form-control email_address tuhin2" name="email_address" placeholder="name@exaple.com">
+          <label for="email_address" class="tuhin2">Email Address</label>
+        </div>
+        <div class="form-floating mb-3 tuhin2">
+          <input type="password" id="password" class="form-control password tuhin2" name="password" placeholder="Password">
+          <label for="password" class="tuhin2">Password</label>
+        </div>
+        <div class="form-floating tuhin2">
+           <input type="email" class="form-control is-invalid tuhin2" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com">
+           <label for="floatingInputInvalid tuhin2">Invalid input</label>
+        </div>
+        <div class="row tuhin2 mb-3">
+          <div class="col tuhin2">
+            <input type="text" class="form-control tuhin2" placeholder="First name" aria-label="Fast name">
+          </div>
+          <div class="col tuhin2">
+            <input type="text" class="form-control tuhin2" placeholder="Last name" aria-label="Last name">
+          </div>
+        </div>
+        <div class="row tuhin2 g-3">
+          <div class="col-md-6 tuhin2">
+            <label for="email1" class="forn-label">Email</label>
+            <input type="email1" class="form-control tuhin2 email1" id="email1" name="email1">
+          </div>
+           <div class="col-md-6 tuhin2">
+            <label for="password1" class="forn-label">Password</label>
+            <input type="password1" class="form-control tuhin2 password1" id="password1" name="password1">
+          </div>
+          <div class="col-md-12 tuhin2">
+            <label for="address1" class="forn-label">Address</label>
+            <input type="text" class="form-control tuhin2 address1" id="address1" name="password1" placeholder="1234 Tuhin 121">
+          </div>
+          <div class="col-md-6 tuhin2">
+            <label for="city1" class="forn-label tuhin2">city</label>
+            <input type="text" class="form-control tuhin2 city1" id="city1" name="city1">
+          </div>
+          <div class="col-md-4 tuhin2">
+            <label for="state1" class="forn-label tuhin2">State</label>
+            <select name="state1" id="state1" class="form-select tuhin2">
+              <option selected>Choose</option>
+              <option>....</option>
+            </select>
+          </div>
+          <div class="col-md-2 tuhin2">
+            <label for="zip1" class="forn-label tuhin2">Zip</label>
+            <input type="text" class="form-control tuhin2 zip1" id="zip1" name="zip1">
+          </div>
+          <div class="col-12">
+            <div class="mb-3 form-check tuhin2">
+               <input type="checkbox" id="check1" class="form-check-input check1 tuhin2" name="check1">
+               <label for="check1" class="form-check-label tuhin2">check me out</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary tuhin2">Sign in</button>
+          </div>
+        </div>
+      </form>
+          <form class="row gx-3 gy-2 align-items-center tuhin2">
+  <div class="col-sm-3 tuhin2">
+    <label class="visually-hidden tuhin2" for="specificSizeInputName">Name</label>
+    <input type="text" class="form-control tuhin2" id="specificSizeInputName" placeholder="Jane Doe">
+  </div>
+  <div class="col-sm-3tuhin2">
+    <label class="visually-hidden tuhin2" for="specificSizeInputGroupUsername">Username</label>
+    <div class="input-group tuhin2">
+      <div class="input-group-text tuhin2">@</div>
+      <input type="text" class="form-control tuhin2" id="specificSizeInputGroupUsername" placeholder="Username">
+    </div>
+  </div>
+  <div class="col-sm-3 tuhin2">
+    <label class="visually-hidden tuhin2" for="specificSizeSelect">Preference</label>
+    <select class="form-select tuhin2" id="specificSizeSelect">
+      <option selected>Choose...</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+  <div class="col-auto tuhin2">
+    <div class="form-check tuhin2">
+      <input class="form-check-input tuhin2" type="checkbox" id="autoSizingCheck2">
+      <label class="form-check-label tuhin2" for="autoSizingCheck2">
+        Remember me
+      </label>
+    </div>
+  </div>
+  <div class="col-auto tuhin2">
+    <button type="submit" class="btn btn-primary tuhin2">Submit</button>
+  </div>
+</form>
+        <form>
+          <div class="row g-3 tuhin2">
+            <div class="col-md-6 tuhin2">
+              <label for="first1" class="form-label tuhin2">First name</label>
+              <input type="text" class="form-control is valid tuhin2" id="first1" name="first1" placeholder="Enter your first name" required>
+              <div class="valid-feedback">
+                looks good
+              </div>
+            </div>
+            <div class="col-md-6 tuhin2">
+              <label for="last1" class="form-label tuhin2">last name</label>
+              <input type="text" class="form-control is valid tuhin2" id="last1" name="last1" placeholder="Enter yout last name" required>
+              <div class="valid-feedback">
+                looks good
+              </div>
+            </div>
+            <div class="col-md-12 tuhin2">
+              <label for="email_address" class="form-label">Email Address</label>
+              <input type="email" id="email_address" class="form-control is-invalid  email_address tuhin2" name="email_address" placeholder="enter your email address" required>
+              <div class="valid-feedback">
+                looks good
+              </div>
+              <div  class="invalid-feedback">
+                Enter your email address
+              </div>
+            </div>
+            <div class="col-md-6 tuhin2">
+            <label for="state1" class="forn-label tuhin2">State</label>
+            <select name="state1" id="state1" class="form-select is-invalid tuhin2">
+              <option selected>Choose</option>
+              <option>....</option>
+            </select>
+            <div  class="invalid-feedback">
+                Enter your email address
+              </div>
+          </div>
+          <div class="col-md-6 tuhin2">
+            <label for="zip1" class="forn-label tuhin2">Zip</label>
+            <input type="text" class="form-control is-invalid tuhin2 zip1" id="zip1" name="zip1">
+            <div  class="invalid-feedback">
+                Enter your email address
+              </div>
+          </div>
+          <div class="mb-3 form-check tuhin2">
+            <input type="checkbox" id="check1" class="form-check-input check1 tuhin2" name="check1">
+            <label for="check1" class="form-check-label tuhin2">check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary tuhin2">submit</button>
+            
+
+
+          </div>
+
+        </form>
+
+
+
+    </div>
+
+
+
+
+    
+    <!--js linkes -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body> 
+</html>
